@@ -1,9 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { PostListComponent } from '../users/post-list/post-list.component';
+import { PostListComponent } from './post-list/post-list.component';
 import { PostDetailsComponent } from './post-details/post-details.component';
-
-
 
 @NgModule({
   declarations: [
@@ -12,6 +10,10 @@ import { PostDetailsComponent } from './post-details/post-details.component';
   ],
   imports: [
     CommonModule
+  ],
+  exports: [
+    PostListComponent,
+    PostDetailsComponent
   ]
 })
 export class PostsModule { }

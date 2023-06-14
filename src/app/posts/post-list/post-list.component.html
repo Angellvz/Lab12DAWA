@@ -1,1 +1,8 @@
-<p>post-list works!</p>
+<ul>
+    <li *ngFor="let post of posts" (click)="showPostDetails(post)">
+      {{ post.title }}
+    </li>
+  </ul>
+  
+  <app-post-details [selectedPost]="selectedPost"></app-post-details>
+  

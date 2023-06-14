@@ -4,6 +4,7 @@ import { UsersModule } from './users/users.module';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { PostsModule } from './posts/posts.module';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import { NotFoundComponent } from './not-found/not-found.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    UsersModule
+    UsersModule,
+    PostsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

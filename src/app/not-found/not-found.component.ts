@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./not-found.component.css']
 })
 export class NotFoundComponent {
-
+  // Aquí puedes agregar la lógica necesaria para el componente NotFound
 }
